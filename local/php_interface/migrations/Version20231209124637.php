@@ -16,11 +16,17 @@ class Version20231209124637 extends Version
 
     public function up()
     {
+        if(!CModule::IncludeModule("iblock")){
+            return;
+        }
         IblockTable::update(self::CLOTHES_IBLOCK_ID, ['CODE' => self::CLOTHES_OLD_CODE]);
     }
 
     public function down()
     {
+        if(!CModule::IncludeModule("iblock")){
+            return;
+        }
         IblockTable::update(self::CLOTHES_IBLOCK_ID, ['CODE' => self::CLOTHES_NEW_CODE]);
     }
 }
