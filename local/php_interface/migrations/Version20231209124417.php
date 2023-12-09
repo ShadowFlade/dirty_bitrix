@@ -3,7 +3,7 @@
 namespace Sprint\Migration;
 
 
-class Version20231209124243 extends Version
+class Version20231209124417 extends Version
 {
     protected $description = "clothe(4xS)";
 
@@ -39,7 +39,7 @@ class Version20231209124243 extends Version
     ),
   ),
 ));
-        $iblockId = $helper->Iblock()->getIblockIdIfExists('clothess', 'catalog');
+        $iblockId = $helper->Iblock()->getIblockIdIfExists('clothessss', 'catalog');
 
     }
 
